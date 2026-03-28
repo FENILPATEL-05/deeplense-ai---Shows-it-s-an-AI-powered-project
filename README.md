@@ -147,7 +147,80 @@ npm run dev
 
 ---
 
-## 📚 Documentation
+## �️ Adding Images
+
+Images are **not included** in the repository (best practice for large datasets). To use Deeplense with your images:
+
+### Step 1: Place Images in Inbox
+```bash
+# Copy your images to inbox folder
+cp /path/to/your/images/*.jpg deeplense/images/inbox/
+cp /path/to/your/images/*.png deeplense/images/inbox/
+```
+
+**Supported Formats:** JPG, JPEG, PNG, WebP, BMP
+
+### Step 2: Index Images
+
+**Option A: Bulk Index (One-time)**
+```bash
+cd deeplense/pipeline
+source ../backend/venv/bin/activate
+python bulk_index.py
+```
+Expected output:
+```
+✓ Indexing 150 images...
+✓ Generated embeddings (50/150)
+✓ Stored in Qdrant
+✓ Updated PostgreSQL metadata
+```
+
+**Option B: Auto-Watch (Real-time)**
+```bash
+cd deeplense/pipeline
+source ../backend/venv/bin/activate
+python watcher.py
+```
+This continuously watches `inbox/` and indexes new images automatically.
+
+### Step 3: Search!
+Go to **http://localhost:3000** and search for your images 🎉
+
+### Image Organization
+```
+deeplense/images/
+├── inbox/          → Place images here
+│   ├── photo1.jpg
+│   ├── photo2.png
+│   └── ...
+├── processed/      → Auto-moved after indexing ✓
+│   └── (indexed images)
+└── failed/         → Images with errors ⚠️
+    └── (needs retry)
+```
+
+### Troubleshooting Images
+
+| Problem | Solution |
+|---------|----------|
+| Images not indexing | Check `deeplense/images/failed/` for errors |
+| Retry failed images | `python admin.py --retry-failed` |
+| Clear & re-index | Delete `storage/` folder and re-run `bulk_index.py` |
+| Out of memory | Reduce `BATCH_SIZE` in `config.py` |
+
+### Sample Datasets
+
+Don't have images? Try these:
+- **Pixabay**: https://pixabay.com/ (free, 5000+ images)
+- **Unsplash**: https://unsplash.com/ (free downloads)
+- **COCO Dataset**: https://cocodataset.org/ (ML benchmark)
+
+Download ~100 images to test Deeplense!
+
+---
+
+## �📚 Documentation
 
 ### Installation from Scratch
 
