@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+transformers
+torch
+Pillow
+qdrant-client==1.7.1
+psycopg2-binary
+python-dotenv
+python-multipart
+pydantic

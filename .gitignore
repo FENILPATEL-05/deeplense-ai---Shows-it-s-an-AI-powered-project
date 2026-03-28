@@ -1,0 +1,96 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Node.js
+node_modules/
+.next/
+out/
+.turbo/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Project-specific
+storage/
+snapshots/
+qdrant
+*.log
+reclassify.log
+debug_filtering.py
+_PROJECT_STATUS.txt
+COMPLETION_SUMMARY.md
+SEARCH_ACCURACY_IMPROVEMENTS.md
+QUICK_START.md
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+/snapshots/tmp/
+qdrant/
+storage/
+images/inbox/
+images/failed/
+images/processed/
+reclassify.log

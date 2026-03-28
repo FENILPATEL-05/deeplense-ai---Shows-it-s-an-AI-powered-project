@@ -1,0 +1,7 @@
+watchdog
+transformers
+torch
+Pillow
+qdrant-client
+psycopg2-binary
+python-dotenv
