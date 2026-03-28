@@ -3,11 +3,13 @@
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-FENILPATEL--05-blue?logo=github)](https://github.com/FENILPATEL-05/deeplense-ai---Shows-it-s-an-AI-powered-project.git)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)](https://www.python.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-14.2-black?logo=next.js)](https://nextjs.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green?logo=fastapi)](https://fastapi.tiangolo.com/)
-[![License](https://img.shields.io/badge/License-Custom%20--%20Ask%20Permission-red)](#license)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009485?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Qdrant](https://img.shields.io/badge/Qdrant-1.7.0+-purple)](https://qdrant.tech/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14+-336791?logo=postgresql)](https://www.postgresql.org/)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen)]()
 
 **An advanced semantic image search engine powered by CLIP AI, combining deep learning embeddings with hybrid search algorithms.**
 
